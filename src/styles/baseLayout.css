@@ -1,0 +1,7 @@
+/* This file contains styles specific to the BaseLayout component
+   Most styles have been moved to index.css as part of a unified design system */
+
+/* Import the design system */
+@import './index.css';
+
+/* Any BaseLayout-specific styles would go here */ 

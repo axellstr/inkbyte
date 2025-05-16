@@ -1,0 +1,105 @@
+/* -----------------------------
+   DESIGN SYSTEM
+----------------------------- */
+
+/* Colors */
+:root {
+	--color-primary: #3bcf15;
+	--color-background: #1f1c1c;
+	--color-surface: #2a2a2a;
+	--color-text-primary: #ffffff;
+	--color-text-secondary: #a0a0a0;
+	--color-text-tertiary: #707070;
+	
+	/* Functional colors */
+	--color-accent: var(--color-primary);
+	--color-focus: rgba(59, 207, 21, 0.5);
+
+	/* Opacity variants */
+	--opacity-hover: 0.8;
+	--opacity-active: 0.6;
+	--opacity-disabled: 0.4;
+
+	/* Spacing system */
+	--space-xs: 0.25rem;   /* 4px */
+	--space-sm: 0.5rem;    /* 8px */
+	--space-md: 1rem;      /* 16px */
+	--space-lg: 1.5rem;    /* 24px */
+	--space-xl: 2rem;      /* 32px */
+	--space-2xl: 3rem;     /* 48px */
+	--space-3xl: 5rem;     /* 80px */
+
+	/* Typography */
+	--font-sans: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+	--font-weight-light: 300;
+	--font-weight-regular: 400;
+	--font-weight-medium: 500;
+	
+	/* Border radius */
+	--radius-sm: 2px;
+	--radius-md: 4px;
+	--radius-lg: 8px;
+	
+	/* Transitions */
+	--transition-fast: 0.2s ease;
+	--transition-normal: 0.3s ease;
+	--transition-slow: 0.5s ease;
+	
+	/* Shadows */
+	--shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.1);
+	--shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+	--shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* -----------------------------
+   RESET & BASE STYLES
+----------------------------- */
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: var(--font-sans);
+	background-color: var(--color-background);
+	color: var(--color-text-primary);
+	line-height: 1.5;
+	font-size: 16px;
+	min-height: 100%;
+	scroll-behavior: smooth;
+}
+
+body {
+	position: relative;
+	overflow-x: hidden;
+	height: 300vh;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+}
+
+img, svg {
+	display: block;
+	max-width: 100%;
+}
+
+button {
+	font-family: inherit;
+	border: none;
+	background: none;
+	padding: 0;
+	cursor: pointer;
+	font-size: inherit;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* -----------------------------
+   LAYOUT
+----------------------------- */
+

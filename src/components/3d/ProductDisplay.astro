@@ -1,0 +1,30 @@
+---
+// Props for component customization
+interface Props {
+  containerClass?: string;
+  productLabel?: string;
+  productTitle?: string;
+}
+
+const { 
+  containerClass = "",
+  productLabel = "Tシャツ",
+  productTitle = "The best is yet to come"
+} = Astro.props;
+
+import styles from './ProductDisplay.module.css';
+---
+
+<div id="product-container" class={`${styles.container} ${containerClass}`} data-label={productLabel} data-title={productTitle}></div>
+
+<script>
+  import ProductViewer from './ProductViewer.js';
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    const container = document.getElementById('product-container');
+    if (container) {
+      // Initialize the 3D viewer
+      new ProductViewer(container);
+    }
+  });
+</script> 

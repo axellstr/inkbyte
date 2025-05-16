@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../components/layout/BaseLayout.astro';
+import ProductDisplay from '../components/3d/ProductDisplay.astro';
+import '../styles/index.css';
+import styles from './index.module.css';
+---
+
+<BaseLayout title="Fashion Concept | 3D Experience">
+	<section class={`hero ${styles.productHero}`}>
+		<ProductDisplay productLabel="Tシャツ" productTitle="The best is yet to come" />
+	</section>
+</BaseLayout>
