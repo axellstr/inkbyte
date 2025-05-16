@@ -182,7 +182,7 @@ export default class ProductViewer {
     const progressBar = document.getElementById('progress-bar');
     
     loader.load(
-      'glb3.glb', // Path to the model file
+      'glb4.glb', // Path to the model file
       (gltf) => { // Success callback - called when model is loaded
         this.model = gltf.scene; // Get the main scene from the loaded file
         
